@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin-ext');
+
+body {
+  margin:  10% 0 ;
+  font-family: 'Open Sans', sans-serif;
+}
+.demo-full-width {
+  width: 100%;
+}
+.margin-top {
+  margin-top: 15px;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+.demo-input-width {
+  width: 95%;
+}
+.radio-label-padding {
+  padding-right: 10px;
+  color: grey;
+}
+.form {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid lightgray;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+}
+.fieldContainer {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.demo-full-width {
+  float: left;
+}
+.removeFieldBtn {
+  float: left;
+}
+.addFieldBtn {
+  float: left;
+}
+
+
+.mat-mdc-tab-body-content {
+  overflow: hidden!important;
+}

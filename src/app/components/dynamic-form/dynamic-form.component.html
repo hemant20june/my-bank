@@ -1,0 +1,14 @@
+
+    <h2 class="text-success text-center">
+      {{this.formData.fName}}
+    </h2>
+		<div fxLayout="row" fxLayoutAlign="center">
+
+			<form [formGroup]='form' (submit)='onSubmit($event)' novalidate>
+				<div fxLayout="column">
+          <ng-container *ngFor='let field of formData.fields;' dynamicField [field]='field' [group]='form'>
+          </ng-container>
+				</div>
+			</form>
+		</div>
+

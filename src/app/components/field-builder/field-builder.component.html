@@ -1,0 +1,13 @@
+<div class="form-group row" [formGroup]="form">
+  <label class="col-md-3 form-control-label" [attr.for]="field.label">
+    {{field.label}}
+    <strong class="text-danger" *ngIf="field.required">*</strong>
+  </label>
+  <div class="col-md-9" [ngSwitch]="field.type">
+    <textbox *ngSwitchCase="'input'" [field]="field" [form]="getFormGroup()"></textbox>
+    <selectbox *ngSwitchCase="'select'" [field]="field" [form]="getFormGroup()"></selectbox>
+    <textbox-otp *ngSwitchCase="'inputOTP'" [field]="field" [form]="getFormGroup()" (onValueChange)="onInputChange($event)"></textbox-otp>
+
+    <div class="alert alert-danger my-1 p-2 fadeInDown animated" *ngIf="!isValid && isDirty">{{field.label}} is required</div>
+  </div>
+</div>
